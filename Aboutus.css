@@ -1,0 +1,100 @@
+header h1 {
+    text-align: center; /* Center the title */
+    margin-left: 50px; /* Add spacing from the left edge */
+    margin-right: 50px;
+    font-size: 80px; /* Adjust font size */
+    color: white; /* Title color */
+    font-weight: thin; /* Make the title bold */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+transition: font-size 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+
+section {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 0 auto; /* Center the section horizontally */
+    width: 80%; /* Adjust width for better centering */
+    transition: background-color 0.6s ease; /* Smooth transition for background */
+    border-radius: 20px; /* Optional: Add rounded corners */
+}
+
+section:hover {
+    background-color: rgba(0, 0, 0, 0.829); /* Shared darker opacity background */
+    padding: 10px; /* Add padding to make the background visible */
+}
+
+section h2 {
+    font-size: 50px; /* Adjust font size */
+    color: white; /* Title color */
+    font-weight: thin; /* Make the title bold */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+    text-align: center; /* Center the heading text */
+}
+
+section h2:hover {
+    font-size: 70px; /* Increase font size on hover */
+}
+
+section p {
+    display: none; /* Initially hide the paragraph */
+    color: white; /* Paragraph text color */
+    font-size: 18px; /* Adjust font size */
+    text-align: center; /* Center the paragraph text */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+    opacity: 0; /* Initially hide the paragraph */
+    display: block; /* Ensure it takes up space */
+}
+
+section:hover p {
+    display: block; /* Show the paragraph when hovering over the section */
+    opacity: 1; /* Make the paragraph fully visible */
+}
+
+footer {
+    width: 100%; /* Make the footer span the entire width */
+    background-color: white (0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Footer text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add padding for spacing */
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+section:last-of-type br {
+    display: block;
+    margin-bottom: 10px; /* Adjust the value for more or less space */
+    content: "";
+}
+
+.header-links {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.header-links a {
+  position: absolute;
+  top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.5s ease, color 0.2s;
+}
+
+.header-links a:first-child {
+  left: 10px;
+}
+
+.header-links a:last-child {
+  right: 10px;
+}
+
+.header-links a:hover {
+  background: rgba(4, 197, 255, 0.8);
+  color: #fff;
+}
